@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>Slack</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>0</numberOfRerun>
+   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <rerunImmediately>false</rerunImmediately>
+   <testSuiteGuid>e5909370-4700-412d-8c71-9f98841108fb</testSuiteGuid>
+   <testCaseLink>
+      <guid>f4cc307a-65af-4962-b573-615eed7e3684</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Slack/TC_NavigateToURL</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>95eefb86-2566-4826-bc61-dee7249383eb</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Slack/TC_Login_Positive</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>12b69fc2-59a3-4102-abfd-11a4d8da7a4a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Slack/TC_Login_Positive_With_Variable</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>aa73bf85-e3c3-4eb4-a86b-c73b4d4ef8cf</id>
+         <iterationEntity>
+            <iterationType>RANGE</iterationType>
+            <value>1-1</value>
+         </iterationEntity>
+         <testDataId>Data Files/Login Variable</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId>aa73bf85-e3c3-4eb4-a86b-c73b4d4ef8cf</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>workspace</value>
+         <variableId>848d3d46-f9b0-4fdd-a311-ffb8f5ea1504</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>aa73bf85-e3c3-4eb4-a86b-c73b4d4ef8cf</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>username</value>
+         <variableId>f7c950b3-d720-4a2d-b35c-40f8c6451b53</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>27f729c0-e3b0-4e3c-8289-aaa3eef54fff</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>
