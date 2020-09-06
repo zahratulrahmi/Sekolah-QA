@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>Slack</name>
+   <name>Slack_Negative</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,27 +10,15 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>false</rerunImmediately>
-   <testSuiteGuid>e5909370-4700-412d-8c71-9f98841108fb</testSuiteGuid>
+   <testSuiteGuid>9f9fb10b-9d9d-4265-86ed-636ef83b8e78</testSuiteGuid>
    <testCaseLink>
-      <guid>f4cc307a-65af-4962-b573-615eed7e3684</guid>
+      <guid>f95366b4-4fa0-4c41-8d81-e07a41df9fe1</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Slack/TC_NavigateToURL</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>85a141d1-bf46-4267-ac19-44fed03ca8ca</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Slack/TC_Login_Positive</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>97bbe72c-2a48-421a-b05c-850974f7ad4c</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Slack/TC_NavigateToURL</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>3f38c011-0766-4835-adfa-1f784af42cf4</guid>
+      <guid>65a34dee-c659-4e6d-b250-02cf95524ddf</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Slack/TC_Login_Negative</testCaseId>

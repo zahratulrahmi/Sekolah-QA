@@ -16,15 +16,18 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.click(findTestObject('Slack/Lnk_Signin'))
+response = WS.sendRequestAndVerify(findTestObject('APICILSY/GET_List'))
 
-WebUI.verifyElementPresent(findTestObject('Slack/Ttl_Signin'), 0)
+def slurper = new groovy.json.JsonSlurper()
 
-println('Url yang exist adalah: ' + WebUI.getUrl())
+def result = slurper.parseText(response.getResponseBodyContent())
 
-WebUI.verifyMatch(WebUI.getUrl(), 'https://slack.com/signin', false)
+def value = result.data[2].first_name
 
-WebUI.setText(findTestObject('Slack/Txt_Workspace'), workspace)
+println('Value is: ' + value)
 
-WebUI.click(findTestObject('Slack/Btn_Continue'))
+GlobalVariable.userName = value
 
+println('Update value is ' + GlobalVariable.userName)
+
+WS.sendRequestAndVerify(findTestObject('APICILSY/PUT_Update'))

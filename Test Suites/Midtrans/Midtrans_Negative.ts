@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>Slack</name>
+   <name>Midtrans_Negative</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,29 +10,29 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>false</rerunImmediately>
-   <testSuiteGuid>e5909370-4700-412d-8c71-9f98841108fb</testSuiteGuid>
+   <testSuiteGuid>920b90d2-313c-417c-8db3-ab6827875a97</testSuiteGuid>
    <testCaseLink>
-      <guid>f4cc307a-65af-4962-b573-615eed7e3684</guid>
+      <guid>5785eb8b-c080-490e-9031-d08bedf2925e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Slack/TC_NavigateToURL</testCaseId>
+      <testCaseId>Test Cases/Midtrans/TC_NavigateToUrl</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>85a141d1-bf46-4267-ac19-44fed03ca8ca</guid>
+      <guid>7b39fd44-ce81-4d1c-8362-c9e61d5903e1</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Slack/TC_Login_Positive</testCaseId>
+      <testCaseId>Test Cases/Midtrans/TC_Buy_Negative_ShoppingCart - coba</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>97bbe72c-2a48-421a-b05c-850974f7ad4c</guid>
+      <guid>d6763f70-a654-4807-b42d-139567d31f5a</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Slack/TC_NavigateToURL</testCaseId>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Midtrans/TC_Buy_Negative_ShoppingCart</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>3f38c011-0766-4835-adfa-1f784af42cf4</guid>
+      <guid>4c2da842-6610-40ea-a35a-44d9bec503e7</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Slack/TC_Login_Negative</testCaseId>
+      <testCaseId>Test Cases/Midtrans/TC_Buy_Negative_Card</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>Slack</name>
+   <name>Midtrans_Positif</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,29 +10,23 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>false</rerunImmediately>
-   <testSuiteGuid>e5909370-4700-412d-8c71-9f98841108fb</testSuiteGuid>
+   <testSuiteGuid>ebe27c51-f3d7-4c56-a15c-ab8efaeddd0a</testSuiteGuid>
    <testCaseLink>
-      <guid>f4cc307a-65af-4962-b573-615eed7e3684</guid>
+      <guid>258eccb1-7582-4b63-aa60-42a28f8404aa</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Slack/TC_NavigateToURL</testCaseId>
+      <testCaseId>Test Cases/Midtrans/TC_NavigateToUrl</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>85a141d1-bf46-4267-ac19-44fed03ca8ca</guid>
+      <guid>46be25a4-829c-4e3a-9d0b-a56b27a5cb53</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Slack/TC_Login_Positive</testCaseId>
+      <testCaseId>Test Cases/Midtrans/TC_Buy_Positive</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>97bbe72c-2a48-421a-b05c-850974f7ad4c</guid>
+      <guid>b8475d1b-fab9-4317-913c-eb9e5f0d5de7</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Slack/TC_NavigateToURL</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>3f38c011-0766-4835-adfa-1f784af42cf4</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Slack/TC_Login_Negative</testCaseId>
+      <testCaseId>Test Cases/Midtrans/TC_Buy_Positive_Promo</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

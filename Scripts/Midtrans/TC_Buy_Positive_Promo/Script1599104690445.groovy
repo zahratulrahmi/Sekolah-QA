@@ -15,16 +15,33 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
 
-WebUI.click(findTestObject('Slack/Lnk_Signin'))
+WebUI.click(findTestObject('Midtrans/Btn_BuyNow'))
 
-WebUI.verifyElementPresent(findTestObject('Slack/Ttl_Signin'), 0)
+WebUI.verifyElementPresent(findTestObject('Midtrans/Ttl_ShoppingCart'), 0)
 
-println('Url yang exist adalah: ' + WebUI.getUrl())
+WebUI.click(findTestObject('Midtrans/Btn_CheckOut'))
 
-WebUI.verifyMatch(WebUI.getUrl(), 'https://slack.com/signin', false)
+WebUI.click(findTestObject('Midtrans/Btn_Continue'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('Slack/Txt_Workspace'), workspace)
+WebUI.click(findTestObject('Midtrans/Ttl_CreditDebitCard'))
 
-WebUI.click(findTestObject('Slack/Btn_Continue'))
+WebUI.setText(findTestObject('Midtrans/Txt_CardNumber'), '4811111111111114')
+
+WebUI.setText(findTestObject('Midtrans/Txt_ExpiryDate'), '0125')
+
+WebUI.setText(findTestObject('Midtrans/Txt_CVV'), '123')
+
+WebUI.click(findTestObject('Midtrans/Btn_PayNow'))
+
+WebUI.delay(5)
+
+WebUI.setText(findTestObject('Midtrans/Txt_Password'), '112233')
+
+WebUI.click(findTestObject('Midtrans/Btn_OK'))
+
+WebUI.delay(7)
+
+WebUI.verifyElementPresent(findTestObject('Midtrans/Ttl_ThankYou'), 5)
 

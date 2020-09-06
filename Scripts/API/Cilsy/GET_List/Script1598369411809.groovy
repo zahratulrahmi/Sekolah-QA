@@ -16,15 +16,5 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.click(findTestObject('Slack/Lnk_Signin'))
-
-WebUI.verifyElementPresent(findTestObject('Slack/Ttl_Signin'), 0)
-
-println('Url yang exist adalah: ' + WebUI.getUrl())
-
-WebUI.verifyMatch(WebUI.getUrl(), 'https://slack.com/signin', false)
-
-WebUI.setText(findTestObject('Slack/Txt_Workspace'), workspace)
-
-WebUI.click(findTestObject('Slack/Btn_Continue'))
+WS.sendRequestAndVerify(findTestObject('APICILSY/GET_List'))
 
